@@ -1,0 +1,587 @@
+<html lang="ko" class="fp-enabled" style="overflow: hidden; height: 100%;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=0,maximum-scale=10,user-scalable=yes">
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>THE CEO</title>
+<link rel="stylesheet" href=" default.css">
+<link rel="stylesheet" href=" font-awesome.min.css">
+<!--[if lte IE 8]>
+<script src=" js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://www.theceonft.com";
+var g5_bbs_url   = " bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+
+<link rel="apple-touch-icon" sizes="57x57" href=" theme/basic/img/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href=" theme/basic/img/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href=" theme/basic/img/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href=" theme/basic/img/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href=" theme/basic/img/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href=" theme/basic/img/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href=" theme/basic/img/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href=" theme/basic/img/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href=" theme/basic/img/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192" href=" theme/basic/img/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href=" theme/basic/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href=" theme/basic/img/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href=" theme/basic/img/favicon-16x16.png">
+<link rel="manifest" href="theme/basic/img/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content=" theme/basic/img/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<script src=" jquery-1.12.4.min.js "></script>
+<script src=" jquery-migrate-1.4.1.min.js "></script>
+<script src=" jquery.menu.js "></script>
+<script src=" common.js "></script>
+<script src=" wrest.js "></script>
+<script src=" placeholders.min.js "></script>
+</head>
+<body class="mainp fp-viewing-main-1" style="overflow: hidden; height: 100%;">
+<div class="bodybg"></div>
+
+<link rel="stylesheet" href="animate.min.css">
+<link rel="stylesheet" href=" xeicon.min.css">
+<link rel="stylesheet" href=" noto-sans.css">
+<link href=" css2" rel="stylesheet">
+<link href=" css2(1)" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href=" pretendard.css">
+<link rel="stylesheet" type="text/css" href=" nanumsquare.css">
+<link rel="stylesheet" type="text/css" href=" notosanskr.css">
+<link rel="stylesheet" href="all.css">
+
+<link rel="stylesheet" href="swiper.min.css">
+<script src="swiper.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href=" fullPage.css">
+<script type="text/javascript" src="scrolloverflow.min.js"></script>
+<script type="text/javascript" src="fullPage.js"></script>
+<script type="text/javascript" src="easings.min.js"></script>
+
+
+
+
+
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 -->
+<header class="header ani">
+	<div class="inner">
+		<div class="logo"><a href=" "><img src=" logo.png" alt=""></a></div>
+		<ul class="menu">
+			<li><a href="#main-1">Home</a></li>
+			<li><a href="https://the-ceo-nft.gitbook.io/theceo/" target='_blank'>Whitepaper</a></li>
+			<li><a href="#main-3">Roadmap</a></li>
+			<li><a href="#main-4">Information</a></li>
+			<li><a href="#main-2">Universe</a></li>
+			<li><a href="#main-5">Team</a></li>
+			<!-- <li><a href="#main-6">Partners</a></li> -->
+			<li><a href="#main-7">Community</a></li>
+			<li class="dropdown">
+				<a class="dropbtn">THE</a>
+				<div class="dropdown-content">
+					<a href="https://thevisionnft.com" target='_blank'>THE VISION</a>
+					<a href="#">THE OFFICE</a>
+				</div>
+			</li>
+		</ul>
+		<div class="mo_ham">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+</header>
+
+<div class="mo_head">
+	<ul class="mo_head_ul">
+		<li><a href=" #main-1">Home</a></li>
+		<li><a href="https://the-ceo-nft.gitbook.io/theceo/">Whitepaper</a></li>
+		<li><a href=" #main-3">Roadmap</a></li>
+		<li><a href=" #main-4">Information</a></li>
+		<li><a href=" #main-2">Universe</a></li>
+		<li><a href=" #main-5">Team</a></li>
+		<!-- <li><a href="#main-6">Partners</a></li> -->
+		<li><a href=" #main-7">Community</a></li>
+		<li class="dropdown">
+			<a class="dropbtn">THE</a>
+			<div class="dropdown-content">
+				<a href="https://thevisionnft.com" target='_blank'>THE VISION</a>
+				<a href="#">THE OFFICE</a>
+			</div>
+		</li>
+	</ul>
+</div>
+
+<script>
+	$(document).ready(function(){
+		$('.mo_ham').click(function(){
+			$('.header').toggleClass('on');
+		});
+
+		$('.mo_head_ul > li > a').click(function(){
+			$('.header').removeClass('on');
+		});
+	});
+</script>
+
+
+
+<section id="main">
+	<article class="section main1" data-anchor="main-1">
+		<div class="inner">
+			<div class="tit font_ex">"BE THE CEO,</div>
+			<div class="tit font_ex">BE THE GREATEST"</div>
+		</div>
+	</article>
+	<article class="section main3" data-anchor="main-3">
+		<div class="inner">
+			<div class="main_tit font_ex faf">THE Roadmap</div>
+			<div class="timeline main3ul fau">
+				<div class="timeline-row">
+					<div class="timeline-time">
+						<li>
+							<div class="cate">THE TAKING-OFF</div>
+							<div class="tit">Q4 2021</div>
+							<ul class="desc">
+								<li>THE Research</li>
+								<li>THE Team</li>
+								<li>THE Modeling</li>
+							</ul>
+						</li>
+					</div>
+					<div class="timeline-content">
+						<img src="main3_img_1.jpg" width="60%" height="" alt="">
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						<li>
+							<div class="cate">THE Community</div>
+							<div class="tit">Q1 2022</div>
+							<ul class="desc">
+								<li>THE Investment</li>
+								<li>THE Members</li>
+								<li>THE Launching</li>
+							</ul>
+						</li>
+					</div>
+					<div class="timeline-content">
+						<img src="main3_img_2.png" alt="">
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						<li>
+							<div class="cate">THE Minting</div>
+							<div class="tit">Q2 2022</div>
+							<ul class="desc">
+								<li>THE CEO NFT</li>
+								<li>THE Backers</li>
+							</ul>
+						</li>
+					</div>
+					<div class="timeline-content">
+						<img src="main3_img_3.png"  alt="">
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						<li>
+							<div class="cate">THE Docking</div>
+							<div class="tit">Q3 2022</div>
+							<ul class="desc">
+								<li>THE CEO Token</li>
+								<li>THE Vision</li>
+								<li>THE Expasion</li>
+							</ul>
+						</li>
+					</div>
+					<div class="timeline-content">
+						<img src="main3_img_4.png" alt="">
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						<li>
+							<div class="cate">THE Blooming</div>
+							<div class="tit">Q4 2022</div>
+							<ul class="desc">
+								<li>THE OFFICE</li>
+								<li>THE ? (Secret)</li>
+								<li>THE Partnership</li>
+							</ul>
+						</li>
+					</div>
+					<div class="timeline-content">
+						<img src="main3_img_51.png" alt="">
+					</div>
+				</div>
+				<div class="timeline-row">
+					<div class="timeline-time">
+						<li>
+							<div class="cate">THE DAO</div>
+							<div class="tit">Q1 &amp; Q2 2023</div>
+							<ul class="desc">
+								<li>THE CEO VC</li>
+								<li>THE Partner</li>
+								<!-- <li>Migration or Cross-Chain Development</li> -->
+								<li>THE Meet Up</li>
+							</ul>
+						</li>
+					</div>
+					<div class="timeline-content">
+						<img src="main3_img_6.png" alt="">
+					</div>
+				</div>
+			</div>
+			<div class="main3box">
+				<div class="tit font_mt">THE CEO DAO</div>
+				<ul class="desc">
+					<li>THE CEO VC</li>
+					<li>THE CEO Governance</li>
+					<li>THE CEO Partner</li>
+					<!-- <li>Migration or Cross-Chain Development</li> -->
+					<li>THE CEO Holdings</li>
+				</ul>	
+			</div>
+		</div>
+	</article>
+	<article class="section main4" data-anchor="main-4">
+		<div class="inner">
+			<div class="main_tit font_ex faf">Information</div>
+			<div class="cont fau">
+				'The CEO' is an NFT project based on the Solana blockchain.<br>
+				To sybolize that the CEOs of all fields are working together to build a new world, 10 representative fields were selected and personified into 10 animal species that fit the characteristics of each field. 1000 CEOs in each field, a total of 10,000 CEOs, were made into NFTs with their own unique personalities.<br><br>
+
+				※Initial Supply: Mythic(0%), SSR(0%), SR(5%), R(95%)
+			</div>
+			<div class="maincont fau">
+				<div class="m4_sd_arr m4_sd_prev" tabindex="0" role="button" aria-label="Previous slide"><i class="xi-angle-left-thin"></i></div>
+				<div class="m4_sd_arr m4_sd_next" tabindex="0" role="button" aria-label="Next slide"><i class="xi-angle-right-thin"></i></div>
+				<div class="swiper-container m4_sd swiper-container-initialized swiper-container-horizontal">
+					<ul class="swiper-wrapper" style="transform: translate3d(-3327.5px, 0px, 0px); transition-duration: 0ms;"><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="16" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_17.jpg" alt=""></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="17" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_18.jpg" alt=""></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="18" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_19.jpg" alt=""></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="19" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_20.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="0" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_1.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="1" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_2.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="2" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_3.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="3" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_4.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="4" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_5.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="5" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_6.jpg" alt=""></li>
+												<li class="swiper-slide swiper-slide-prev" data-swiper-slide-index="6" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_7.jpg" alt=""></li>
+												<li class="swiper-slide swiper-slide-active" data-swiper-slide-index="7" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_8.jpg" alt=""></li>
+												<li class="swiper-slide swiper-slide-next" data-swiper-slide-index="8" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_9.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="9" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_10.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="10" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_11.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="11" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_12.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="12" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_13.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="13" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_14.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="14" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_15.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="15" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_16.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="16" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_17.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="17" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_18.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="18" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_19.jpg" alt=""></li>
+												<li class="swiper-slide" data-swiper-slide-index="19" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_20.jpg" alt=""></li>
+											<li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_1.jpg" alt=""></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_2.jpg" alt=""></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_3.jpg" alt=""></li><li class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="3" style="width: 292.5px; margin-right: 10px;"><img src="sec6_img_4.jpg" alt=""></li></ul>
+				<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+			</div>
+		</div>
+	</div></article>
+	<article class="section main2" data-anchor="main-2">
+		<div class="inner" style="overflow: hidden;">
+			<div class="main_tit font_ex faf">Universe</div>
+			<div class="cont fau">
+				The CEO is a DAO governance against centralized Bullstreet & Silicon Bear.<br>
+				<br>
+				All the CEOs who participate in The CEO Projects can expand Organizations through carrying out projects operated as DAO.<br>
+				<br>
+				Against Exisiting corrupted organizations, The CEO will create a new world in Metaverse through decentralized, fair & righteous activities.<br>
+				<br>
+				CEO Tokens will be distributed to The CEO NFT holders, when the goal is achieved each time.<br>
+				<br>
+				<span class="main2_color">WE WANT YOU FOR THE CEO DAO!</span>
+				<div>
+					<a href="https://medium.com/@theceonft/%EC%A0%9C-1%ED%99%94-r-vd-6c6a0a29866">
+						<img src="CEOuniverse.png" alt="" style="width:50%; padding:2rem 0 2rem 0;">
+					</a>
+				</div>
+				<a href="https://medium.com/@theceonft/%EC%A0%9C-1%ED%99%94-r-vd-6c6a0a29866">If you want to know more about THE CEO, Click here for our story!</a>
+			</div>
+		</div>
+	</article>	
+	<article class="section main5" data-anchor="main-5">
+		<div class="inner">
+			<div class="main_tit font_ex faf">Team</div>
+
+			<div class="maincont fau">
+				<div class="swiper-container m5_sd">
+					<ul class="swiper-wrapper">
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_1.png" alt="">
+							</div>
+							<div class="desc"><b>Prodo</b><br><span>Lead Designer Artist</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_2.png" alt="">
+							</div>
+							<div class="desc"><b>Felix</b><br><span>Team Leader</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_3.png" alt="">
+							</div>
+							<div class="desc"><b>Patrick</b><br><span>Global Marketing</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_4.png" alt="">
+							</div>
+							<div class="desc"><b>Rugal</b><br><span>Lead Developer</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_5.png" alt="">
+							</div>
+							<div class="desc"><b>Hailey</b><br><span>Chief-Visionary</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_6.png" alt="">
+							</div>
+							<div class="desc"><b>Neon</b><br><span>Operating Officer</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_7.png" alt="">
+							</div>
+							<div class="desc"><b>Elsa</b><br><span>Product Designer</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_8.png" alt="">
+							</div>
+							<div class="desc"><b>Jager</b><br><span>Project Moderator</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_9.png" alt="">
+							</div>
+							<div class="desc"><b>Jose</b><br><span>Strategic Advisor</span></div>
+						</li>
+
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec7_img_11.png" alt="">
+							</div>
+							<div class="desc"><b>Kris</b><br><span>Technical Advisor</span></div>
+						</li>
+						<li class="swiper-slide">
+							<div class="thum">
+								<img src="sec_img_10.jpg" alt="">
+							</div>
+							<div class="desc"><b>Iron</b><br><span>Executive Advisor</span></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+	</article>
+	<!-- <article class="section main6" data-anchor="main-6">
+		<div class="inner">
+			<div class="main_tit font_ex faf">Partners</div>
+			<ul class="main6ul fau">
+				<li><a href=""><img src="theme/basic/img/main6_logo1.png" alt=""></a></li>
+				<li><a href=""><img src="theme/basic/img/main6_logo2.png" alt=""></a></li>
+			</ul>
+		</div>
+	</article> -->
+	<article class="section main7" data-anchor="main-7">
+		<div class="inner">
+			<div class="main_tit font_ex faf">Community</div>
+			<ul class="main7ul fau">
+				<!-- <li><a href=""><img src="tele.png" alt=""></a></li> -->
+				<!-- <li><a href="https://www.instagram.com/thesajangnft/" target="_blank"><img src="insta.png" alt=""></a></li> -->
+				<li><a href="https://twitter.com/THECEO_NFT" target="_blank"><img src="twitter.png" alt=""></a></li>
+				<li><a href="https://discord.gg/theceonft" target="_blank"><img src="dco.png" alt=""></a></li>
+				<li><a href="https://medium.com/@theceonft" target="_blank"><img src="midum.png" alt=""></a></li>
+			</ul>
+			<div class="main7thum fau2"><img src="com_bg.png" alt=""></div>
+			<div class="ft_copy">
+				theceonft@gmail.com <br><span>Copyright 2022 TheCEO. All rights reserved</span>
+			</div>
+		</div>
+	</article>		
+</section>
+
+
+<script>
+$(document).ready(function() {
+	$('.header').addClass('ani');
+	$('#main').fullpage({
+		//options here
+		autoScrolling:true,
+		scrollHorizontally: true,
+		navigation:true,
+		scrollingSpeed: 1000,
+		scrollOverflow:true,
+		showActiveTooltip: true,
+		
+		/*afterLoad: function(anchorLink, index){
+			deleteLog = true;
+			if(index == "1") {
+				$('.main1').addClass('ani');
+			}
+			if(index == "2") {
+				$('.main2').addClass('ani');
+			}
+			if(index == "3") {
+				$('.main3').addClass('ani');
+			}
+			if(index == "4") {
+				$('.main4').addClass('ani');
+			}
+			if(index == "5") {
+				$('.main5').addClass('ani');
+			}
+			if(index == "6") {
+				$('.main6').addClass('ani');
+			}
+			if(index == "7") {
+				$('.main7').addClass('ani');
+			}
+		},*/
+	});
+
+	
+
+});
+</script>
+
+
+
+<script>
+var swiper = new Swiper('.m4_sd', {
+	autoplay: {
+		delay: 1000,
+		disableOnInteraction: false,
+	},
+	slidesPerView: 4,
+	spaceBetween: 10,
+	speed:1500,
+	loop: true,
+	navigation: {
+		nextEl: '.m4_sd_next',
+		prevEl: '.m4_sd_prev',
+	},
+	breakpoints: { 
+        390: {
+			slidesPerView: 1,
+        },
+        768: {
+			slidesPerView: 2,
+        },
+    }
+});
+
+var swiper2 = new Swiper('.m5_sd', {
+	autoplay: {
+		delay: 500,
+		disableOnInteraction: false,
+	},
+	slidesPerView: 4,
+	spaceBetween: 30,
+	speed:2000,
+	loop: true,
+	breakpoints: { 
+        390: {
+			slidesPerView: 1,
+        },
+        768: {
+			slidesPerView: 2,
+			spaceBetween: 10,
+        },
+		1200: {
+			slidesPerView: 3,
+			spaceBetween: 20,
+        },
+    }
+});
+</script>
+
+
+
+
+
+
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+
+
+
+</body></html>
